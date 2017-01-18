@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------------------
-# Name:        module1
+# Name:        PourPointCreation.py
 # Purpose: Creates pour points from Flow Accumulation based on existing WBD
 # boundaries.
 #
