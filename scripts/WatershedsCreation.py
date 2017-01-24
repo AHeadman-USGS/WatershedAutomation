@@ -15,7 +15,7 @@ from arcpy import env
 arcpy.CheckOutExtension("Spatial")
 from arcpy.sa import *
 
-def CreateWatersheds((Huc12, FlowAcc, FlowDir, FlowLines, workspace, OutFile, OutRaster, OutSheds):
+def CreateWatersheds(Huc12, FlowAcc, FlowDir, FlowLines, workspace, OutFile, OutRaster, OutSheds):
     try:
         env.workspace = workspace
         env.overwriteOutput = True
