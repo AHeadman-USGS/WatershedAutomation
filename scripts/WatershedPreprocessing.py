@@ -1,3 +1,6 @@
+# Simple tool to automate the fill, flow accumulation and flow direction
+# steps for watershed creation.  Input requires a hydroconditioned DEM.
+
 from __future__ import print_function, absolute_import
 import arcpy, os, traceback
 from egis import GPMsg, MsgError
