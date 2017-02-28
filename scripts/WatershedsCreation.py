@@ -2,7 +2,7 @@
 # Name:        WatershedsCreation.py
 # Purpose:     Same item as PourpointCreation, but with added functionality.
 #              This steps through the process actually creating watersheds from the
-#              pourpoints.
+#              pourpoints.  Note - this is the fully supported tool.
 #
 # Author:      aheadman
 #
