@@ -1,3 +1,7 @@
+# Roughly the same tool as the watershed automation tool, however this tool skips
+# the creation of the pour points.  It creates and attributes watersheds based on
+# modified pourpoints.
+
 from __future__ import print_function, absolute_import
 import arcpy, os, traceback
 from egis import GPMsg, MsgError
