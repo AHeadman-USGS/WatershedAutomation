@@ -19,9 +19,13 @@ def watershedRerun(pourPoints, Huc12, FlowDir, FlowAcc, OutSheds, workspace):
         OutList = []
 
         # Runs SnapPoints to build a snap points raster for the Watershed step.
+        # By default this is the highest flow accumulation value within a 5m buffer
+        # This may/may not suit the needs of your project.  Feel free to alter if 
+        # watersheds end up in strange places.
+        
         OutRaster = 'snap'
         GPMsg("Snapping pour points...")
-        SnapPoints = SnapPourPoint(pourPoints, FlowAcc, "10", 'OBJECTID')
+        SnapPoints = SnapPourPoint(pourPoints, FlowAcc, "5", 'OBJECTID')
         SnapPoints.save(OutRaster)
     
         # Runs sa.Watershed and RasterToPolygon conversion.
