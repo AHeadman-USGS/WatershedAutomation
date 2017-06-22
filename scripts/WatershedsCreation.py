@@ -35,7 +35,7 @@ def CreateWatersheds(Huc12, FlowAcc, FlowDir, FlowLines, workspace, OutFile, Out
             arcpy.Clip_analysis(FlowLines, TempHuc12, 'TempClipFL')
             TempClipFL = 'TempClipFL'
             TempBuff = 'TempBufferFL'
-            arcpy.Buffer_analysis(TempClipFL, TempBuff, "50 Meters",  "FULL", "FLAT", "ALL")
+            arcpy.Buffer_analysis(TempClipFL, TempBuff, "5 Meters",  "FULL", "FLAT", "ALL")
             arcpy.Clip_analysis(TempBuff, TempHuc12, 'TempBuff2')
             arcpy.Delete_management(TempBuff)
             TempBuff = 'TempBuff2'
